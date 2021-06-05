@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
-import HomeNavigator from './routes/homeStack'
+import DrawerNavigator from './routes/drawer'
 
 const getFonts = () => {
   return Font.loadAsync({
@@ -16,7 +16,7 @@ export default function App() {
 
   if (fontsLoaded) {
     return (
-      <HomeNavigator />
+      <DrawerNavigator />
     );
   } else {
     return (
